@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icon-mosque.png" type="image/x-icon">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;700&family=Lateef:wght@300;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>Mumeen</title>
+    </head>
+    <body>
+        <main>
+            <div class="top">
+                <div id="genderWrapper" class="hidden">
+                    <label class="gender">
+                        Check this if you're a female
+                        <input type="checkbox" id="gender" name="gender">
+                    </label>
+                </div>
+                <div id="weather"></div>
+            </div>
+
+            <div class="middle">
+                <h3 id="time" class="time"></h3>
+                <h5 id="greet"></h5>
+            </div>
+
+            <div class="bottom">
+                <div class="author">
+                    <p id="author"></p>
+                </div>
+                <div class="quran">
+                    <p id="arabic"></p>
+                    <p id="english"></p>
+                    <p id="surah"></p>
+                </div>
+                <div class="donate">
+                    <span id="changeGender">Reset Gender</span>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

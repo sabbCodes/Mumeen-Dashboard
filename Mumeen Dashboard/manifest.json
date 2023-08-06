@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Mumeen Dashboard",
+    "version": "1.0.0",
+    "description": "A Dashboard that sets background image to random muslim images and shows random Quran verses and their translations. Also show weather status based on user location",
+    "action": {
+        "default_icon": "icon-mosque.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

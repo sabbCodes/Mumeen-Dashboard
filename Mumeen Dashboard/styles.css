@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 20px #242424;
+}
+
+main {
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle{
+    width: max-content;
+    height: max-content;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.time {
+    text-align: center;
+    font-size: 11rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+#greet{
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    max-width: 90vw;
+}
+
+#weather {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#weather > img {
+    width: 65px;
+}
+
+.weather-city {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    margin-top: -10px;
+    font-size: 1.5rem;
+}
+
+.weather-temp {
+    margin: 0;
+    font-size: 1.9rem;
+    margin-left: -5px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quran{
+    max-width: calc(100vw / 3);
+    align-self: center;
+    text-align: center;
+    max-height: 150px;
+    scroll-behavior: smooth;
+    overflow: auto;
+    margin: 0 auto;
+    text-shadow: 0px 0px 20px #242424;
+}
+
+.quran::-webkit-scrollbar{
+    display: none;
+}
+
+.author,
+.donate{
+    max-width: 150px;
+}
+
+.author,
+#author{
+    margin: 0;
+    align-self: flex-end;
+    padding: 0;
+}
+
+.donate{
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+}
+
+#arabic{
+    font-family: 'Lateef', serif;
+}
+
+#arabic,
+#english,
+#surah{
+    font-size: 1.3rem;
+}
+
+#changeGender{
+    text-decoration: none;
+    color: rgba(250, 250, 250, .9);
+    align-self: flex-end;
+}
+
+#changeGender:hover,
+#changeGender:focus{
+    cursor: pointer;
+    opacity: .6;
+}
